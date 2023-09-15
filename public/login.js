@@ -19,7 +19,7 @@ $(document).ready(function () {
                 localStorage.setItem("userId", data.userId);
 
                 // Redirect to home page
-                window.location.href = "../templates/home.html";
+                window.location.href = "../templates/appointment.html";
             } else {
                 alert("Login failed. Please check your username and password.");
             }
