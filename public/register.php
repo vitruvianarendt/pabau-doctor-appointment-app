@@ -1,10 +1,9 @@
 <?php
+// Include the database connection
+include("../includes/db_connection.php");
 
 // Check form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Include the database connection
-    include("../includes/db_connection.php");
 
     // Get user input
     $email = $_POST["email"];
