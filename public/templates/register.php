@@ -6,7 +6,6 @@
 <body>
     <h2>Register</h2>
     <form action="../register.php" method="POST">
-
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
         
