@@ -1,0 +1,16 @@
+/* Global styles for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+    
+/* Global styles for headings */
+h1, h2, h3 {
+    color: #333;
+}
+    
+/* Global link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+}

@@ -4,6 +4,7 @@
     <title>Edit Appointment</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../edit_appointment.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
 </head>
 <body>
     <h1>Edit Appointment</h1>

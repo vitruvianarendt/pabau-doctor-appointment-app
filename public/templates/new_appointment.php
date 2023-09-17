@@ -4,6 +4,7 @@
     <title>Appointment Form</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../submit_appointment.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
 </head>
 <body>
     <h1>Appointment Form</h1>
