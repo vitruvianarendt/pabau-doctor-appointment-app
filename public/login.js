@@ -10,7 +10,7 @@ $(document).ready(function () {
             try {
                 data = JSON.parse(data); // Parse the JSON response
             } catch (error) {
-                console.error("Error parsing JSON: " + error);
+                console.error("Error parsing JSON: " + data);
             }
 
             // Check if data.userId is defined
@@ -18,9 +18,10 @@ $(document).ready(function () {
                 // Save the user ID in localStorage 
                 localStorage.setItem("userId", data.userId);
 
-                // Redirect to home page
+                // Redirect to the appointments page
                 window.location.href = "../templates/appointment.html";
             } else {
+                console.log(data);
                 alert("Login failed. Please check your username and password.");
             }
         }).fail(function () {
