@@ -4,6 +4,7 @@
     <title>User Appointments</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../fetch_appointments.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
 </head>
 <body>
     <h1>User Appointments</h1>
