@@ -1,12 +1,15 @@
-$(document).ready(function () {
-    $("#loginForm").submit(function (event) {
+$(document).ready(function() {
+    $("#loginForm").submit(function(event) {
         event.preventDefault();
 
         const username = $("#username").val();
         const password = $("#password").val();
 
         // Send credentials to login.php script for authentication
-        $.post('../login.php', { username: username, password: password }, function (data) {
+        $.post('../login.php', {
+            username: username,
+            password: password
+        }, function(data) {
             try {
                 data = JSON.parse(data); // Parse the JSON response
             } catch (error) {
@@ -19,12 +22,12 @@ $(document).ready(function () {
                 localStorage.setItem("userId", data.userId);
 
                 // Redirect to the appointments page
-                window.location.href = "../templates/appointment.html";
+                window.location.href = "../templates/appointments.php";
             } else {
                 console.log(data);
                 alert("Login failed. Please check your username and password.");
             }
-        }).fail(function () {
+        }).fail(function() {
             alert("An error occurred while processing your request.");
         });
     });
